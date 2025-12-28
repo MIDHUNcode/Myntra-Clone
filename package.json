@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@expo/metro-runtime": "^6.1.2",
+    "body-parser": "^2.2.1",
+    "expo": "~54.0.29",
+    "expo-secure-store": "~15.0.8",
+    "expo-server-sdk": "^4.0.0",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1",
+    "node-fetch": "^3.3.2",
+    "react": "19.1.0",
+    "react-native": "^0.82.1",
+    "react-native-svg": "15.12.1",
+    "react-native-web": "^0.21.2"
+  },
+  "name": "taskapp",
+  "version": "1.0.0",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
+  }
+}

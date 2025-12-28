@@ -1,0 +1,10 @@
+{
+  "android": {
+    "package": "com.midhun314.taskapp"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "4d0a56b6-b4e9-4181-98d0-7f2ea5c0315a"
+    }
+  }
+}
