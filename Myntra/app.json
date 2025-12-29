@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "TaskApp",
+    "slug": "TaskApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/myntra.jpg",
+    "scheme": "taskapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+
+    "extra": {
+      "eas": {
+        "projectId": "e1cf5a29-cbfe-4e4b-9229-52f2241d6946"
+      }
+    },
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.myapp",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+
+    "android": {
+      "package": "com.yourcompany.myapp",
+      "edgeToEdgeEnabled": true
+    },
+
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/myntra.jpg"
+    },
+
+    "plugins": [
+      "expo-router"
+    ],
+
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
