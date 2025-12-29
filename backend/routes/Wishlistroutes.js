@@ -1,11 +1,11 @@
 const express = require("express");
-const Bag = require("../models/Bag");
+const Wishlist = require("../models/Wishlist");
 const router = express.Router();
 
 router.post("/", async (req, res) => {
   try {
-    const Bags = new Bag(req.body);
-    const saveitem = await Bags.save();
+    const Wishlists = new Wishlist(req.body);
+    const saveitem = await Wishlists.save();
     res.status(200).json(saveitem);
   } catch (error) {
     console.log(error);
@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
 
 router.get("/:userid", async (req, res) => {
   try {
-    const bag = await Bag.find({ userId: req.params.userid }).populate(
+    const bag = await Wishlist.find({ userId: req.params.userid }).populate(
       "productId"
     );
     res.status(200).json(bag);
@@ -27,11 +27,11 @@ router.get("/:userid", async (req, res) => {
 
 router.delete("/:itemid", async (req, res) => {
   try {
-    await Bag.findByIdAndDelete(req.params.itemid);
-    res.status(200).json({ message: "Item removed from bag" });
+    await Wishlist.findByIdAndDelete(req.params.itemid);
+    res.status(200).json({ message: "Item removed from Wishlist" });
   } catch (error) {
     console.log(error);
-    return res.status(500).json({ message: "Error removing item from bag" });
+    return res.status(500).json({ message: "Error removing item from Wishlist" });
   }
 });
 module.exports = router;
