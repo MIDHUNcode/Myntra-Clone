@@ -52,7 +52,5 @@ expo start
 
 MIT License
 
-```
 
-If you want, I can also **create a shorter 350-character version of the README** for GitHub display while keeping this detailed one for full documentation. Do you want me to do that?
 ```
